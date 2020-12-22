@@ -32,7 +32,7 @@ const server = {
 
 const client = {
     entry: {
-        client: path.join(__dirname, 'src', 'client', 'client.ts')
+        client: path.join(__dirname, 'src', 'client', 'client.tsx')
     },
     output: {
         filename: '[name].js',
@@ -49,6 +49,7 @@ const client = {
     resolve: {
         extensions: [
             '.ts',
+            '.tsx',
             '.js'
         ]
     },

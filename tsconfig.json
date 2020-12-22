@@ -2,7 +2,11 @@
   "compilerOptions": {
     "module": "es2015",
     "target": "es5",
-    "sourceMap": true
+    "sourceMap": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules"
