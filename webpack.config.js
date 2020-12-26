@@ -1,5 +1,6 @@
 const path = require('path');
 const GasPlugin = require('gas-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry: {
@@ -24,6 +25,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new GasPlugin()
+        new GasPlugin(),
+        new Dotenv({
+            path: path.join(__dirname, '.env')
+        })
     ]
 }
