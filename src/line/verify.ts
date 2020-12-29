@@ -16,7 +16,7 @@ const verify = (idToken: string) => {
         console.log(response.getContentText());
         return null;
     }
-    return response.getContentText();
+    return JSON.parse(response.getContentText());
 };
 
 export default verify;

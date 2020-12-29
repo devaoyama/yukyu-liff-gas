@@ -1,4 +1,4 @@
-const spreadsheet = (lineID: string, name: string, date: Date, days: "1日" | "半日", reason: string) => {
+const spreadsheet = (lineID: string, name: string, date: string, days: "1日" | "半日", reason: string) => {
     // スプレッドシートを取得
     const spreadsheetID = PropertiesService.getScriptProperties().getProperty('spreadsheet_id');
     const spreadsheet = SpreadsheetApp.openById(spreadsheetID);
